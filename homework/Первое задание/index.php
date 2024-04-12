@@ -33,7 +33,7 @@
     $num4 = 120;
 
     echo "Числа $num3 и $num4 имеют разницу 100? ";
-    if (abs($num3 - $num4) === 100 || abs($num3 - $num4) === -100) {
+    if (abs($num3 - $num4) === 100 || -100) {
         echo 'Да';
     } else {
         echo 'Нет';

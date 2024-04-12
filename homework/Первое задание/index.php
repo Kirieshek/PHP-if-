@@ -28,34 +28,30 @@
 
     <h2>Задание 2.</h2>
     <?php
-    function compare($num1, $num2) {
-        if (abs($num1) === 100 && abs($num2) === 100) {
-            echo "Да";
-        } else {
-            echo "Нет";
-        }
-    }
 
-    $number3 = 100;
-    $number4 = -100;
-    echo "Числа $number3 и $number4 имеют разницу 100? ";
-    compare($number3, $number4);
+    $num3 = 20;
+    $num4 = 120;
+
+    echo "Числа $num3 и $num4 имеют разницу 100? ";
+    if (abs($num3 - $num4) === 100 || abs($num3 - $num4) === -100) {
+        echo 'Да';
+    } else {
+        echo 'Нет';
+    }
     ?>
 
     <h2>Задание 3.</h2>
     <?php
-    function checkSize($num1, $num2) {
-        if (abs($num1) <= 20 && abs($num2) <= 20) {
-            echo "Да";
-        } else {
-            echo "Нет";
-        }
-    }
 
-    $number5 = 15;
-    $number6 = -18;
-    echo "Числа $number5 и $number6 имеют разницу не более 20? ";
-    checkSize($number5, $number6);
+    $num5 = 15;
+    $num6 = -5;
+
+    echo "Числа $num5 и $num6 имеют разницу не более 20? ";
+    if (abs($num5 - $num6) <= 20) {
+        echo 'Да';
+    } else {
+        echo 'Нет';
+    }
     ?>
 
     <h2>Задание 4.</h2>
